@@ -1,0 +1,226 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Clean sans-serif font */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Links inherit the text color */
+}
+
+header {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Red gradient background for header */
+    padding: 25px;
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333; /* Red color on hover */
+    transform: translateY(-3px); /* Slight hover effect */
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white footer */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Me Page */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #ff416c; /* Red border */
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ff4b2b; /* Red color for titles */
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #333; /* Dark text for paragraph */
+}
+
+/* Technical Interests Page */
+.technical-interests {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    color: #333; /* Dark text */
+}
+
+.technical-interests .interest {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.interest h2 {
+    font-size: 2.2rem;
+    color: #ff4b2b; /* Red color for headings */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.interest p {
+    font-size: 1.2rem;
+    color: #333; /* Dark text */
+    margin-bottom: 20px;
+}
+
+.interest-img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Portfolio Page */
+.portfolio {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #ff4b2b; /* Red for the main title */
+}
+
+.portfolio .project {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.portfolio .project h2 {
+    font-size: 2.2rem;
+    color: #ff4b2b; /* Red for project titles */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.portfolio .project p {
+    font-size: 1.3rem;
+    color: #333; /* Dark text for project descriptions */
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: #ff4b2b; /* Red background for buttons */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff416c; /* Darker red on hover */
+    transform: translateY(-3px); /* Slight hover lift effect */
+}
+
+/* Project Details Page */
+.project-details {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.project-details h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ff4b2b; /* Red for the project title */
+}
+
+.project-details ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.project-details ul li {
+    font-size: 1.3rem;
+    color: #ff4b2b; /* Red for bullet points */
+    margin: 12px 0;
+}
+
+.project-details p {
+    font-size: 1.2rem;
+    color: #333; /* Dark text for project description */
+    margin-bottom: 25px;
+}
+
+.project-details a {
+    color: #ff4b2b; /* Red for project links */
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-details a:hover {
+    color: #ff416c; /* Darker red for link hover */
+}
